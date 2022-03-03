@@ -3,22 +3,23 @@ public class TreinandoCodigos {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("estando escopo das variaveis");
+		int[] celular = {34, 45, 65, 33, 66, 223};
 		
-		int idade = 20;
-		int quantidadePessoas = 3;
-		boolean acompanhado;
+		System.out.print("Ordem original: ");
 		
-		if (quantidadePessoas >= 2) {
-			acompanhado = true;
-		} else {
-			acompanhado = false;
-		}
+		for(int i = 0 ; i < celular.length; i++) {
 			
-		if (idade >= 18 || acompanhado) {
-			System.out.println("seja bem vindo");
-		} else {
-			System.out.println("infelizmente voce não pode entrar");
+			System.out.print(celular[i] + " ");
+		}
+		
+		
+		System.out.print("\nOrdem inversa: ");
+		
+		
+		for(int b = (celular.length -1); b >= 0; b--) {
+		
+		System.out.print(celular[b] + " ");
+		
 		}
 		
 	}
